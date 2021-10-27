@@ -1,0 +1,8 @@
+<h1 class="text-center mb-3">Bem vindo {{UserName}}</h1>
+
+<div class="p-3 text-center border b-1" *ngFor="let item of items | async">
+    <label class="me-2"><b>ID:</b> {{ item.id }} -</label>
+    <label class="me-2"><b>Nome:</b> {{ item.name }} -</label>
+    <label class="me-2"><b>E-mail:</b> {{ item.email }} -</label>
+    <label class="me-2"><b>Cidade:</b> {{ item.address['city'] }}</label>
+</div>
